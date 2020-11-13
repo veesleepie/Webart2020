@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<Style>
+    /*BODY*/
+   @media only screen and (min-width: 1400px) {
+    body{
+        background-image: url("https://64.media.tumblr.com/5c8c85c1213ed1d0ec82210eab6070e3/58c6a4a4214aaa55-ca/s2048x3072/e6d0ce3db72c88c8d9dde4fe3443f020279aa337.png");
+        background-size: cover;
+        background-position: absolute;
+        background-repeat: no-repeat;
+    }
+    }
+
+  /* change the bg image below*/
+
+    @media only screen and (max-width: 1400px) {
+    body{
+        background-image: url("https://fauux.neocities.org/Static2.gif");
+    }
+    }
+
+       /*fullscreen container*/ 
+    @media only screen and (min-width: 1400px) {
+    
+    #container{
+        position:absolute;
+        top:100px;
+        right:360px;
+        background-color:rgb(0, 0, 0);
+        border-style: solid;
+        border-width: 5px;
+        height: 600px;
+        width: 925px;
+        border-radius: 10px;
+        overflow:hidden;
+        z-index:1
+    }
+    }
+
+    /*HALF screen container*/ 
+
+    @media only screen and (max-width: 1400px) {
+    
+    #container{
+        position:relative;
+        top:25px;
+        margin:auto;
+        height: 600px;
+        width: 925px;
+        overflow:hidden;
+    }
+    }
+
+#home{
+    background-color:crimson;
+    position: relative;
+    width: 900px;
+    height: 580px;
+    margin:auto;
+    margin-bottom: 10px;
+    padding:10px;
+    overflow:scroll;
+    border-radius: 10px;
+
+}
+
+#about{
+    
+    background-color:crimson;
+    position: relative;
+    width: 900px;
+    height: 580px;
+    margin:auto;
+    margin-bottom: 10px;
+    padding:10px;
+    overflow:scroll;
+    border-radius: 10px;
+}
+
+#games{
+    background-color:crimson;
+    position: relative;
+    width: 900px;
+    height: 580px;
+    margin:auto;
+    margin-bottom: 10px;
+    padding:10px;
+    overflow:scroll;
+    border-radius: 10px;
+
+}
+
+#work{
+    background-color:crimson;
+    position: relative;
+    width: 900px;
+    height: 580px;
+    margin:auto;
+    margin-bottom: 10px;
+    padding:10px;
+    overflow:scroll;
+    border-radius: 10px;
+}
+
+#movies{
+    background-color:crimson;
+    position: relative;
+    width: 900px;
+    height: 580px;
+    margin:auto;
+    margin-bottom: 10px;
+    padding:10px;
+    overflow:scroll;
+    border-radius: 10px;
+}
+#moviegrid{
+    width: 900px;
+    height: 520px;
+    overflow:scroll;
+}
+
+/*sidebar*/
+@media only screen and (min-width: 1400px) {
+
+.homelink{
+    background-color:pink;
+    position:absolute;
+    right:95px;
+    top:210px;
+    width:130px;
+    height: 40px;
+    transform: rotate(-7deg);
+    overflow:hidden;
+    opacity:0 ;
+}
+
+.aboutlink{
+    background-color:pink;
+    position:absolute;
+    right:70px;
+    top:265px;
+    width:140px;
+    height: 40px;
+    transform: rotate(-7deg);
+    overflow:hidden;
+    opacity:0 ;
+}
+
+.gameslink{
+    background-color:pink;
+    position:absolute;
+    right:35px;
+    top:400px;
+    width:120px;
+    height: 50px;
+    transform: rotate(3deg);
+    overflow:hidden;
+    opacity:0 ;
+}
+
+.worklink{
+    background-color:pink;
+    position:absolute;
+    right:50px;
+    top:470px;
+    width:110px;
+    height: 40px;
+    transform: rotate(3deg);
+    overflow:hidden;
+    opacity:0 ;
+}
+
+.movieslink{
+    background-color:pink;
+    position:absolute;
+    right:60px;
+    top:550px;
+    width:120px;
+    height: 40px;
+    transform: rotate(5deg);
+    overflow:hidden;
+    opacity:0 ;
+}
+
+#sidebarimg{
+    position:absolute;
+    right:0px;
+    top:160px;
+    z-index: -1;
+
+}
+}
+
+/*MENUBAR*/
+
+@media only screen and (min-width: 1400px) {
+    #menubar{
+        display:hidden;
+        opacity:0;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #menubar{
+        width:100%;
+        height: 100px;
+        text-align: center;
+        overflow: hidden;
+        background-color:darkmagenta;
+    }
+}
+
+/*ABOUT PAGE*/
+#aboutid{
+    position: absolute;
+    text-align: center;
+}
+
+#abouttext{
+    overflow:hidden;
+    position: absolute;
+    right:150px;
+    top:20px;
+    width:300px;
+}
+
+.aboutform{
+position: absolute;
+height:200px;
+right: 140px;
+bottom:20px;
+
+}
+input[type=text]{
+    background-color: #ffb8d8;
+  color: rgb(255, 117, 129);
+  height:10px;
+  padding: 12px 20px;
+  border: solid 2px;
+  border-radius: 4px;
+  cursor: default;
+    
+}
+
+textarea {
+    background-color: #ffb8d8;
+  color: rgb(255, 117, 129);
+  padding: 12px 20px;
+  border: solid 2px;
+  border-radius: 4px;
+  cursor: default;
+}
+
+input[type=submit]{
+    background-color: #ffb8d8;
+  color: rgb(255, 117, 129);
+  height:10px;
+  padding: 12px 20px;
+  border: solid 2px;
+  border-radius: 4px;
+  cursor: default;
+    
+}
+
+
+input[type=submit]:hover {
+  background-color: #da867b;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/*everything below is hidden shit*/
+
+
+@media only screen and (max-width: 1400px) {
+    
+    #sidebarimg{
+        display:none;
+    }
+
+    #sidebarlinks{
+        display:none;
+    }
+    }
+
+</Style>
+<body>
+    <!--sidebar desktop-->
+
+    <div id=sidebarlinks>
+    <div class=homelink>
+        <a href="#home"> <img src="https://64.media.tumblr.com/c585dd7f5b4e6d2961d2236bd830b5e4/5ebfe6bfaca989fc-ce/s400x600/10dc0027e9f5e7daa72a16770a17efff98e42e9d.png"></a>
+    </div>
+
+    <div class=aboutlink>
+        <a href="#about"><img src="https://64.media.tumblr.com/c585dd7f5b4e6d2961d2236bd830b5e4/5ebfe6bfaca989fc-ce/s400x600/10dc0027e9f5e7daa72a16770a17efff98e42e9d.png" ></a>
+    </div>
+
+    <div class=gameslink>
+        <a href="#games"><img src="https://64.media.tumblr.com/c585dd7f5b4e6d2961d2236bd830b5e4/5ebfe6bfaca989fc-ce/s400x600/10dc0027e9f5e7daa72a16770a17efff98e42e9d.png" ></a>
+    </div>
+
+    <div class=worklink>
+        <a href="#work"><img src="https://64.media.tumblr.com/c585dd7f5b4e6d2961d2236bd830b5e4/5ebfe6bfaca989fc-ce/s400x600/10dc0027e9f5e7daa72a16770a17efff98e42e9d.png"></a>
+    </div>
+
+    <div class=movieslink>
+        <a href="#movies"><img src="https://64.media.tumblr.com/c585dd7f5b4e6d2961d2236bd830b5e4/5ebfe6bfaca989fc-ce/s400x600/10dc0027e9f5e7daa72a16770a17efff98e42e9d.png"></a>
+    </div>
+</div>
+
+    <div id=sidebarimg>
+        <img src="https://64.media.tumblr.com/43f7949837ea821232a8b83fc3292ba5/58c6a4a4214aaa55-2a/s500x750/9b728d9ee327f0602babf28124f8b49fd64ea0e1.png" style= width:270px;>
+    </div>
+ 
+    
+<!-- MENU BAR HALF SCREEN-->
+    <div id=menubar>
+        home about
+
+    </div>
+
+    <!--all below is gallery shit-->
+<div id=container>
+
+    <div id=home>
+      <p>welcome to my kitchen we have bananies and avocadies</p>
+       
+    </div>
+
+
+    <div id=about>
+        <div id=aboutid>
+        <h1>Vee Culton</h1>
+        <img src="https://i.pinimg.com/originals/21/8f/17/218f17a8bb4c331e249ece1b02b27efa.gif" style= width:400px>
+        </div>
+
+        <div id=abouttext>
+            <p> i can't help what i am and what i am is a stupid bitch</p>
+            <h2>Credit</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div class="aboutform">
+            <form action="action_page.php">
+          
+              
+              <input type="text" id="fname" name="firstname" placeholder="your name">
+          
+              <input type="text" id="email" name="email" placeholder="your email address">
+              <br>
+          
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+              <br>
+          
+              <input type="submit" value="send">
+          
+            </form>
+          </div>
+    </div>
+
+    <div id=games>
+        <p>GOTDAMN GAMES</p>
+    </div>
+
+    <div id=work>
+        <p>GOTDAMN WORK</p>
+
+    </div>
+
+    <div id=movies>
+        <p>GOTDAMN MOVIES</p>
+        <div id=moviegrid>
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/456701623" width="640" height="360" frameborder="0" allowfullscreen style="width:100%;max-width:400px"></iframe>>
+
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/334974575" width="640" height="352" frameborder="0" allowfullscreen style="width:100%;max-width:400px"></iframe>
+
+            
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<!--FUCKINNNNN....JAVA-->
+
+
+</body>
+</html>
