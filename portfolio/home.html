@@ -2,6 +2,23 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <Style>
+
+    /* FONT SHIT*/
+@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+h1{
+    font-family:"Loved by the King";
+}
+
+h2{
+    font-family: "Loved by the King";
+}
+p{
+    font-family: "Pangolin";
+}
+
+
     /*BODY*/
    @media only screen and (min-width: 1400px) {
     body{
@@ -52,6 +69,23 @@
     }
     }
 
+    a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+
 #home{
     background-color:crimson;
     position: relative;
@@ -90,6 +124,7 @@
     border-radius: 10px;
 
 }
+/*WORK GALLERY*/
 
 #work{
     background-color:crimson;
@@ -102,6 +137,107 @@
     overflow:scroll;
     border-radius: 10px;
 }
+
+
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-height: 800px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+
+
+
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 
 #movies{
     background-color:crimson;
@@ -194,10 +330,11 @@
 
 /*MENUBAR*/
 
+
 @media only screen and (min-width: 1400px) {
     #menubar{
-        display:hidden;
-        opacity:0;
+        display:none;
+        
     }
 }
 
@@ -207,7 +344,18 @@
         height: 100px;
         text-align: center;
         overflow: hidden;
-        background-color:darkmagenta;
+        background-color:rgb(0, 0, 0);
+    }
+
+    .menulinks{
+        font-family: "Loved by the King";
+        color:white;
+        font-size:40px;
+        word-spacing: 60px;
+        padding-top: 20px;;
+        margin:auto;
+        
+
     }
 }
 
@@ -218,17 +366,27 @@
 }
 
 #abouttext{
-    overflow:hidden;
     position: absolute;
     right:150px;
     top:20px;
     width:300px;
+    overflow:scroll;
+    
+}
+
+#aboutcredit{
+    position: absolute;
+    right:150px;
+    bottom:230px;
+    height:180px;
+    width:300px;
+    overflow:scroll;
 }
 
 .aboutform{
 position: absolute;
 height:200px;
-right: 140px;
+right: 80px;
 bottom:20px;
 
 }
@@ -320,7 +478,17 @@ input[type=submit]:hover {
     
 <!-- MENU BAR HALF SCREEN-->
     <div id=menubar>
-        home about
+        <p class=menulinks >
+           <a href="#home" > HOME </a>
+           
+           <a href="#about"> ABOUT </a>
+           
+           <a href="#games"> GAMES </a>
+           
+           <a href="#work"> WORK </a>
+           <a href="#movies"> MOVIES </a>
+          
+        </p>
 
     </div>
 
@@ -328,20 +496,24 @@ input[type=submit]:hover {
 <div id=container>
 
     <div id=home>
-      <p>welcome to my kitchen we have bananies and avocadies</p>
+      <p>welcome to my kitchen we have bananies and avocadies!!</p>
        
     </div>
 
 
     <div id=about>
         <div id=aboutid>
-        <h1>Vee Culton</h1>
+        <h1 style="font-size: 40px;">Vee Culton</h1>
         <img src="https://i.pinimg.com/originals/21/8f/17/218f17a8bb4c331e249ece1b02b27efa.gif" style= width:400px>
         </div>
-
         <div id=abouttext>
-            <p> i can't help what i am and what i am is a stupid bitch</p>
-            <h2>Credit</h2>
+           <p>i am a dumb dumb little bitch but my meat is huge</p>
+        </div>
+
+        <h2 style="text-align:center;font-size:30px; position:absolute;right:300px;top:120px; ">Credit</h2>
+
+        <div id=aboutcredit>
+            
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
 
@@ -370,12 +542,70 @@ input[type=submit]:hover {
     <div id=work>
         <p>GOTDAMN WORK</p>
 
+        
+
+<div class="row">
+  <div class="column">
+    <img src="https://64.media.tumblr.com/bca395fa1dfac2204131998a2fa06c43/7f226090fbc159c1-f4/s1280x1920/2da41e930c98bb33f2ff87e1966fe3cff22fcc2b.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://64.media.tumblr.com/599cb4ec1b43d0101cbb6885052df607/252ed0bb1e9b3ecd-1f/s1280x1920/818f649b8702c2ee69875479b55a2edcc5731daf.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://64.media.tumblr.com/bac18d936090feb004434afbb726986f/8f8edbd91673284c-64/s1280x1920/de7be75bcf0a0c3c25c8c242c2610462e61d744b.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://64.media.tumblr.com/8deead6b243e94825ac952f0c9786ae4/6aee7abd93f289ca-67/s1280x1920/c83c731ca6fa7a1be5cde462377814cb79c90534.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="https://64.media.tumblr.com/bca395fa1dfac2204131998a2fa06c43/7f226090fbc159c1-f4/s1280x1920/2da41e930c98bb33f2ff87e1966fe3cff22fcc2b.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="https://64.media.tumblr.com/599cb4ec1b43d0101cbb6885052df607/252ed0bb1e9b3ecd-1f/s1280x1920/818f649b8702c2ee69875479b55a2edcc5731daf.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="https://64.media.tumblr.com/bac18d936090feb004434afbb726986f/8f8edbd91673284c-64/s1280x1920/de7be75bcf0a0c3c25c8c242c2610462e61d744b.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="https://64.media.tumblr.com/8deead6b243e94825ac952f0c9786ae4/6aee7abd93f289ca-67/s1280x1920/c83c731ca6fa7a1be5cde462377814cb79c90534.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+
+  </div>
+</div>
+
+       
+
+
+
+
     </div>
 
     <div id=movies>
         <p>GOTDAMN MOVIES</p>
         <div id=moviegrid>
-            <iframe title="vimeo-player" src="https://player.vimeo.com/video/456701623" width="640" height="360" frameborder="0" allowfullscreen style="width:100%;max-width:400px"></iframe>>
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/456701623" width="640" height="360" frameborder="0" allowfullscreen style="width:100%;max-width:400px"></iframe>
 
             <iframe title="vimeo-player" src="https://player.vimeo.com/video/334974575" width="640" height="352" frameborder="0" allowfullscreen style="width:100%;max-width:400px"></iframe>
 
@@ -391,7 +621,48 @@ input[type=submit]:hover {
 
 
 <!--FUCKINNNNN....JAVA-->
+<script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+        
 
 
 </body>
+
+
 </html>
