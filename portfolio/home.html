@@ -85,9 +85,30 @@ a:active {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 1400px) {
+  #YT{
+  position:absolute;
+  right:370px;
+  bottom:70px;
+  z-index:2;
+  opacity:.5;
+}
+}
+
+@media only screen and (max-width: 1400px) {
+#YT{
+  position:absolute;
+  right:250px;
+  bottom:50px;
+  z-index:1;
+  opacity:.5;
+}
+}
 
 #home{
-    background-color:crimson;
+    background-image:url("https://64.media.tumblr.com/8d82c2e66caaf612ffac40e230b55be9/2b1b91bb9d114889-92/s640x960/afdf3f1620adcc0cb45033812d1329179fb26029.gif");
+    background-repeat: no-repeat;
+    background-size: 1060px;
     position: relative;
     width: 900px;
     height: 580px;
@@ -101,7 +122,8 @@ a:active {
 
 #about{
     
-    background-color:crimson;
+    background-image: url("https://64.media.tumblr.com/3fa12a2f0cef3b11fd0d710669949a93/2eda65c2bbb425ca-8f/s1280x1920/26652d5ea98589a92d93bde9a9f96fba2f3a71d9.gif");
+    color:white;
     position: relative;
     width: 900px;
     height: 580px;
@@ -113,7 +135,8 @@ a:active {
 }
 
 #games{
-    background-color:crimson;
+    background-image:url("https://64.media.tumblr.com/3554554892b4f5a536ade1cd1dd386a0/de0838b526116dc8-43/s1280x1920/3f80509c5a1d783c663cc0c74f0ad75207167b6f.gifv");
+    background-size: 900px;
     position: relative;
     width: 900px;
     height: 580px;
@@ -127,7 +150,8 @@ a:active {
 /*WORK GALLERY*/
 
 #work{
-    background-color:crimson;
+  background-image: url("https://64.media.tumblr.com/765fb1723af83c8265af9c69f72f22c4/e36629f4ec294961-66/s1280x1920/e6faeccda8d687a9cf3248c7ea470fd8541af1ae.gifv");
+  background-size:950px;
     position: relative;
     width: 900px;
     height: 580px;
@@ -240,7 +264,8 @@ img.hover-shadow {
 
 
 #movies{
-    background-color:crimson;
+    background-image: url("https://previews.dropbox.com/p/thumb/ABD_z5lKst9ZVfb9qUZh6WAy_FKhtGvkkucIpRh86CsTAxz7uCTVYeLQh0mgKtd7RDEJX1NdGHFVXST7nIqLn57arjwAe3hpwI5x6M_k4orp4Mr9dwGBAw_lGSSyJaHMMfcCSZyVTUi-J7scWcBVV9IS62wm17elOccT0ZgcwWvSonREV-rG0-SfMQBriKbE4nlKpEAhPqrwBzkdcXq6maMdb04sanIp8LKYc6vIukQ4pWCK2yeO-YabehUs4wYKKJ7k35_PeB4qeSgKXCGTnkWfyUo0trToTje04MVUbGpBIWw21msb-C65jJZoHKhLa14ZoKj3OEj6jwydkoE2qeiyFQRychtZI7mMEg38et9IsxQkag49vJeBF6nXaCUsqc0dVXdjn1fTzhqriEussVqYx8nh_Zk65VVK4XiR1uruX4VLmN7qcTV4O9W7lgZP9MiuDYaKm5Wn0S99EwQUkttNXUKsOspQm_CU4m6G9K2iJkH74KKBXpvjpXgc7xd1nQc7d1tlaae6CiDdm_1nH_4OLlyfBUkav9XFFsD__gJRcQ/p.gif?fv_content=true&size_mode=5");
+    background-size: 950px;
     position: relative;
     width: 900px;
     height: 580px;
@@ -362,9 +387,15 @@ img.hover-shadow {
 /*ABOUT PAGE*/
 #aboutid{
     position: absolute;
+    left:100px;
     text-align: center;
 }
 
+#aboutlinks{
+  position:absolute;
+  left: 230px;
+  bottom:20px;
+}
 #abouttext{
     position: absolute;
     right:150px;
@@ -492,12 +523,16 @@ input[type=submit]:hover {
 
     </div>
 
+    <!-- YOUTUBE-->
+    <div id=YT>
+      <a href="https://www.youtube.com/channel/UC4dvjeMZmoOokQo5wy0u6fg?view_as=subscriber"><img src="https://64.media.tumblr.com/0065dd59d3c75315fb9a614028eea433/9afd0be922c8cd47-b7/s250x400/9ef068043116de8805c841a08dd61aebfd614329.png"></a>
+    </div>
+
     <!--all below is gallery shit-->
 <div id=container>
 
     <div id=home>
-      <p>welcome to my kitchen we have bananies and avocadies!! i think i'd put uh...a video here maybe idk. somethin big and flashy c:</p>
-      <img src="https://static.wixstatic.com/media/9cbce4_571e9303a07046d6a0fbe4a801300e0b.gif">
+      
        
     </div>
 
@@ -505,7 +540,11 @@ input[type=submit]:hover {
     <div id=about>
         <div id=aboutid>
         <h1 style="font-size: 40px;">Vee Culton</h1>
-        <img src="https://i.pinimg.com/originals/21/8f/17/218f17a8bb4c331e249ece1b02b27efa.gif" style= width:400px>
+        <img src="https://64.media.tumblr.com/1024d264e7b5afd056bd63b98121ed0b/0453142bb790bb52-d6/s1280x1920/c4db3b55dfffc0e8f8e5b2c4594f308973c166dc.gif" style= width:300px>
+        </div>
+        <div id=aboutlinks>
+        <a href="https://twitter.com/sleepiehorror/"><img src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/twitter-icon-18-256.png" style= height:20px> </a>
+        <a href="https://instagram.com/sleepiehorror/"><img src="https://tighestimepieces.com/wp-content/uploads/2016/11/Instagram-icon-WHITE.png" style= height:20px> </a>
         </div>
         <div id=abouttext>
            <p>i am a dumb dumb little bitch but my meat is huge</p>
