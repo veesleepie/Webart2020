@@ -51,6 +51,7 @@ p{
         width: 925px;
         border-radius: 10px;
         overflow:hidden;
+        border-radius: 10px;
         z-index:1
     }
     }
@@ -61,11 +62,13 @@ p{
     
     #container{
         position:relative;
+        background-color:rgb(0, 0, 0);
         top:25px;
         margin:auto;
         height: 600px;
         width: 925px;
         overflow:hidden;
+        border-radius: 10px;
     }
     }
 
@@ -110,8 +113,8 @@ a:active {
     background-repeat: no-repeat;
     background-size: 1060px;
     position: relative;
-    width: 900px;
-    height: 580px;
+    width: 925px;
+    height:600px; 
     margin:auto;
     margin-bottom: 10px;
     padding:10px;
@@ -125,8 +128,8 @@ a:active {
     background-image: url("https://64.media.tumblr.com/3fa12a2f0cef3b11fd0d710669949a93/2eda65c2bbb425ca-8f/s1280x1920/26652d5ea98589a92d93bde9a9f96fba2f3a71d9.gif");
     color:white;
     position: relative;
-    width: 900px;
-    height: 580px;
+    width: 925px;
+    height: 600px;
     margin:auto;
     margin-bottom: 10px;
     padding:10px;
@@ -138,8 +141,8 @@ a:active {
     background-image:url("https://64.media.tumblr.com/3554554892b4f5a536ade1cd1dd386a0/de0838b526116dc8-43/s1280x1920/3f80509c5a1d783c663cc0c74f0ad75207167b6f.gifv");
     background-size: 900px;
     position: relative;
-    width: 900px;
-    height: 580px;
+    width: 925px;
+    height: 600px;
     margin:auto;
     margin-bottom: 10px;
     padding:10px;
@@ -153,8 +156,8 @@ a:active {
   background-image: url("https://64.media.tumblr.com/765fb1723af83c8265af9c69f72f22c4/e36629f4ec294961-66/s1280x1920/e6faeccda8d687a9cf3248c7ea470fd8541af1ae.gifv");
   background-size:950px;
     position: relative;
-    width: 900px;
-    height: 580px;
+    width: 925px;
+    height: 600px;
     margin:auto;
     margin-bottom: 10px;
     padding:10px;
@@ -267,8 +270,8 @@ img.hover-shadow {
     background-image: url("https://previews.dropbox.com/p/thumb/ABD_z5lKst9ZVfb9qUZh6WAy_FKhtGvkkucIpRh86CsTAxz7uCTVYeLQh0mgKtd7RDEJX1NdGHFVXST7nIqLn57arjwAe3hpwI5x6M_k4orp4Mr9dwGBAw_lGSSyJaHMMfcCSZyVTUi-J7scWcBVV9IS62wm17elOccT0ZgcwWvSonREV-rG0-SfMQBriKbE4nlKpEAhPqrwBzkdcXq6maMdb04sanIp8LKYc6vIukQ4pWCK2yeO-YabehUs4wYKKJ7k35_PeB4qeSgKXCGTnkWfyUo0trToTje04MVUbGpBIWw21msb-C65jJZoHKhLa14ZoKj3OEj6jwydkoE2qeiyFQRychtZI7mMEg38et9IsxQkag49vJeBF6nXaCUsqc0dVXdjn1fTzhqriEussVqYx8nh_Zk65VVK4XiR1uruX4VLmN7qcTV4O9W7lgZP9MiuDYaKm5Wn0S99EwQUkttNXUKsOspQm_CU4m6G9K2iJkH74KKBXpvjpXgc7xd1nQc7d1tlaae6CiDdm_1nH_4OLlyfBUkav9XFFsD__gJRcQ/p.gif?fv_content=true&size_mode=5");
     background-size: 950px;
     position: relative;
-    width: 900px;
-    height: 580px;
+    width: 925px;
+    height: 600px;
     margin:auto;
     margin-bottom: 10px;
     padding:10px;
@@ -276,9 +279,10 @@ img.hover-shadow {
     border-radius: 10px;
 }
 #moviegrid{
-    width: 900px;
-    height: 520px;
-    overflow:scroll;
+    width: 935px;
+    height: 600px;
+    overflow-y:scroll;
+    overflow-x:hidden;
 }
 
 /*sidebar*/
@@ -401,24 +405,32 @@ img.hover-shadow {
     right:150px;
     top:20px;
     width:300px;
-    overflow:scroll;
+    overflow:hidden;
     
 }
-
+#aboutcreditcontainer{
+position:absolute;
+right: 80px;
+top:180px;
+  width:385px;
+  height: 180px;
+  overflow-x:hidden;}
+  
 #aboutcredit{
-    position: absolute;
-    right:150px;
-    bottom:230px;
+    position: relative;
     height:180px;
-    width:300px;
-    overflow:scroll;
-}
+    width:400px;
+    overflow-y:scroll;
+    scrollbar-color: yellow blue;
+scrollbar-color: #87ceeb #ff5621;
+scrollbar-color: auto;
+    }
 
 .aboutform{
 position: absolute;
 height:200px;
-right: 80px;
-bottom:20px;
+right: 90px;
+bottom:30px;
 
 }
 input[type=text]{
@@ -529,7 +541,9 @@ input[type=submit]:hover {
     </div>
 
     <!--all below is gallery shit-->
+    <!---->
 <div id=container>
+  
 
     <div id=home>
       
@@ -539,7 +553,7 @@ input[type=submit]:hover {
 
     <div id=about>
         <div id=aboutid>
-        <h1 style="font-size: 40px;">Vee Culton</h1>
+        <h1 style="font-size: 40px; color:rgb(109, 28, 146);">Vee Culton</h1>
         <img src="https://64.media.tumblr.com/1024d264e7b5afd056bd63b98121ed0b/0453142bb790bb52-d6/s1280x1920/c4db3b55dfffc0e8f8e5b2c4594f308973c166dc.gif" style= width:300px>
         </div>
         <div id=aboutlinks>
@@ -552,10 +566,18 @@ input[type=submit]:hover {
 
         <h2 style="text-align:center;font-size:30px; position:absolute;right:300px;top:120px; ">Credit</h2>
 
+        <div id=aboutcreditcontainer>
         <div id=aboutcredit>
             
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <br> 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <br>
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+               <br> 
+               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
+      </div>
 
         <div class="aboutform">
             <form action="action_page.php">
